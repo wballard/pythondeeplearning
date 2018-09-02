@@ -4,6 +4,7 @@ RUN pip install mxnet
 RUN pip install tensorflow
 RUN pip install keras
 
+
 #serve up a jupyter notebook 
 WORKDIR /src
 EXPOSE 8888
