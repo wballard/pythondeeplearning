@@ -1,8 +1,12 @@
 FROM continuumio/anaconda3
 
-RUN pip install mxnet
+RUN pip install mxnet mxnet-mkl
 RUN pip install tensorflow
 RUN pip install keras
+
+# a bit of drawing and visualization support
+RUN apt-get install --yes graphviz
+RUN pip install graphviz
 
 
 #serve up a jupyter notebook 
