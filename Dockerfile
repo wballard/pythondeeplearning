@@ -7,6 +7,7 @@ RUN pip install keras
 # a bit of drawing and visualization support
 RUN apt-get install --yes graphviz
 RUN pip install graphviz
+RUN pip install seaborn==0.9.0
 
 
 #serve up a jupyter notebook 
